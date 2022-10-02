@@ -1,3 +1,18 @@
+This is a Clone of Instagram.
+This web application have feature like make post, delete post, make comment, delete comment.
+When anyone load this project in their system they have to use npm install.
+This will install all node packages.
+But some users are facing problem, the problem is:- 
+
+Module not found: Error: Can't resolve 'querystring' in 'C:\Users\vytck\Desktop\ibm\node_modules\finnhub\dist'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default. This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+
+add a fallback 'resolve.fallback: { "querystring": require.resolve("querystring-es3") }'
+install 'querystring-es3' If you don't want to include a polyfill, you can use an empty module like this: resolve.fallback: { "querystring": false }
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
